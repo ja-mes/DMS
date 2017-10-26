@@ -12,6 +12,8 @@ class VehicleController < ApplicationController
         if @vehicle.save
             flash[:success] = "Vehicle successfully created"
         end
+
+        redirect_to vehicles_path
     end
 
 
