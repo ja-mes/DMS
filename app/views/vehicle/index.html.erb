@@ -26,6 +26,11 @@
     </thead>
 
     <tbody>
-        <%= render @vehicles %>
+        <% @vehicles.each do |v| %>
+            <tr>
+                <td><%= v.make %></td>
+                <td><%= v.model %></td>
+            </tr>
+        <% end %>
     </tbody>
 </table>
