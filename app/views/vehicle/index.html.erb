@@ -3,9 +3,9 @@
         <h1 class="page-header">Vehicles</h1>
     </div>
     <div class="col-md">
-        <button class="btn btn-lg rounded-circle btn-primary float-right">
+        <%= link_to new_vehicle_path, class: "btn btn-lg rounded-circle btn-primary float-right" do %> 
             <i class="fa fa-plus" aria-hidden="true"></i>
-        </button>
+        <% end %>
     </div>
 </div>
 
@@ -15,3 +15,17 @@
         <a class="nav-link active" href="#">Inventory</a>
     </li>
 </ul>
+
+
+<table class="table">
+    <thead class="thead-default">
+        <tr>
+            <th>Make</th>
+            <th>Model</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <%= render @vehicles %>
+    </tbody>
+</table>

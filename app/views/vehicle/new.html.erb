@@ -1,0 +1,23 @@
+<h1 class="page-header">New Vehicle</h1>
+
+
+<%= form_for @vehicle, url: vehicle_index_path do |f| %>
+    <div class="row">
+
+        <div class="col-md">
+            <div class="form-group">
+                <%= f.label :make %>
+                <%= f.text_field :make, class: "form-control" %>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="form-group">
+                <%= f.label :model %>
+                <%= f.text_field :model, class: "form-control" %>
+            </div>
+        </div>
+
+    </div>
+
+    <%= f.submit class: "btn btn-primary" %>
+<% end %>
