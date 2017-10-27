@@ -1,7 +1,9 @@
 <h1 class="page-header">New Vehicle</h1>
 
+<%= render 'shared/errors', obj: @vehicle %>
 
-<%= form_for @vehicle, url: vehicle_index_path do |f| %>
+
+<%= form_for @vehicle do |f| %>
     <div class="row">
 
         <div class="col-md">

@@ -1,4 +1,4 @@
-class VehicleController < ApplicationController
+class VehiclesController < ApplicationController
     def index
         @vehicles = Vehicle.all
     end
@@ -11,9 +11,11 @@ class VehicleController < ApplicationController
         @vehicle = Vehicle.new(vehicle_params)
         if @vehicle.save
             flash[:success] = "Vehicle successfully created"
+            redirect_to vehicles_path
+        else
+            render 'new'
         end
 
-        redirect_to vehicles_path
     end
 
 
