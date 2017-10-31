@@ -1,3 +1,9 @@
 <h1><%= @vehicle.year %> <%= @vehicle.make %> <%= @vehicle.model %></h1>
 
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <%= link_to 'Home', @vehicle, class: "nav-link #{isActive 'vehicles', 'show'}" %>
+    </li>
+</ul>
+
 
