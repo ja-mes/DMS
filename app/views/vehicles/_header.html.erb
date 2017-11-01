@@ -1,0 +1,11 @@
+<h1 class="margin-30 display-4"><%= @vehicle.year %> <%= @vehicle.make %> <%= @vehicle.model %></h1>
+
+<ul class="nav nav-tabs" style="margin-bottom: 30px">
+    <li class="nav-item">
+        <%= link_to 'Overview', @vehicle, class: "nav-link #{isActive 'vehicles', 'show'}" %>
+    </li>
+    <li class="nav-item">
+        <%= link_to 'Edit', edit_vehicle_path(@vehicle), class: "nav-link #{isActive 'vehicles', 'edit'}" %>
+    </li>
+</ul>
+

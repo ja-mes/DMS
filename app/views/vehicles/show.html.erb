@@ -1,10 +1,4 @@
-<h1 class="display-4 page-header"><%= @vehicle.year %> <%= @vehicle.make %> <%= @vehicle.model %></h1>
-
-<ul class="nav nav-tabs" style="margin-bottom: 30px">
-    <li class="nav-item">
-        <%= link_to 'Overview', @vehicle, class: "nav-link #{isActive 'vehicles', 'show'}" %>
-    </li>
-</ul>
+<%= render "header" %>
 
 <div class="row margin-30">
     <div class="col-md">

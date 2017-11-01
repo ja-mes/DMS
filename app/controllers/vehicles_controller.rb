@@ -22,6 +22,21 @@ class VehiclesController < ApplicationController
         @vehicle = Vehicle.find(params[:id])
     end
 
+    def edit
+        @vehicle = Vehicle.find(params[:id])
+    end
+
+    def update
+        @vehicle = Vehicle.find(params[:id])
+
+        if @vehicle.update(vehicle_params)
+            flash[:sucess] = "Vehicle succesfully update"
+            redirect_to edit_vehicle_path
+        else
+            render 'edit'
+        end 
+    end
+
     private
     def vehicle_params
         params.require(:vehicle).permit(:year, :make, :model)
