@@ -1,9 +1,67 @@
-<h1><%= @vehicle.year %> <%= @vehicle.make %> <%= @vehicle.model %></h1>
+<h1 class="display-4 page-header"><%= @vehicle.year %> <%= @vehicle.make %> <%= @vehicle.model %></h1>
 
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs" style="margin-bottom: 30px">
     <li class="nav-item">
-        <%= link_to 'Home', @vehicle, class: "nav-link #{isActive 'vehicles', 'show'}" %>
+        <%= link_to 'Overview', @vehicle, class: "nav-link #{isActive 'vehicles', 'show'}" %>
     </li>
 </ul>
 
+<div class="row margin-30">
+    <div class="col-md">
+        <div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
+            <div class="card-body text-center">
+                <h4 class="card-title">$8,253</h4>
+                <p class="card-text">total cost</p>
+            </div>
+        </div>
+    </div>
 
+    <div class="col-md">
+        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+            <div class="card-body text-center">
+                <h4 class="card-title">23</h4>
+                <p class="card-text">days on lot</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md">
+        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+            <div class="card-body text-center">
+                <h4 class="card-title">10</h4>
+                <p class="card-text">days on frontline</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2 class="margin-30">Pricing</h2>
+
+<div class="row">
+    <div class="col-md">
+        <div class="card bg-light mb-3" style="max-width: 20rem;">
+            <div class="card-body text-center">
+                <h4 class="card-title">$500.00</h4>
+                <p class="card-text">down</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md">
+        <div class="card bg-light mb-3" style="max-width: 20rem;">
+            <div class="card-body text-center">
+                <h4 class="card-title">$10,000.00</h4>
+                <p class="card-text">price</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md">
+        <div class="card bg-light mb-3" style="max-width: 20rem;">
+            <div class="card-body text-center">
+                <h4 class="card-title">$95.00</h4>
+                <p class="card-text">weekly payment</p>
+            </div>
+        </div>
+    </div>
+</div>
