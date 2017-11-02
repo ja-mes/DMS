@@ -53,7 +53,39 @@
                 <%= f.text_field :vehicle_type, class: "form-control" %>
             </div>
         </div>
+    </div>
 
+    <div class="row">
+             
+        <div class="col-md">
+            <div class="form-group">
+                <%= f.label :downPmt, "Down Payment" %>
+                <div class="input-group">
+                    <div class="input-group-addon">$</div>
+                    <%= f.text_field :downPmt, class: "form-control" %>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md">
+            <div class="form-group">
+                <%= f.label :price %>
+                <div class="input-group">
+                    <div class="input-group-addon">$</div>
+                    <%= f.text_field :price, class: "form-control" %>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md">
+            <div class="form-group">
+                <%= f.label :weeklyPmt, "Weekly Payment" %>
+                <div class="input-group">
+                    <div class="input-group-addon">$</div>
+                    <%= f.text_field :weeklyPmt, class: "form-control" %>
+                </div>
+            </div>
+        </div>
 
     </div>
 

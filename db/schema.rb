@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171101232122) do
+ActiveRecord::Schema.define(version: 20171102102038) do
 
   create_table "vehicles", force: :cascade do |t|
     t.string "year"
@@ -24,6 +24,9 @@ ActiveRecord::Schema.define(version: 20171101232122) do
     t.integer "color"
     t.string "engine"
     t.string "vehicle_type"
+    t.float "downPmt"
+    t.float "price"
+    t.float "weeklyPmt"
   end
 
 end
